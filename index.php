@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="forms.css">
     <link rel="icon" href="media/icon.png">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>KoffeeMart</title>
 </head>
 <body>
     
@@ -20,29 +21,29 @@
         
         <div class="login-links">
             <ul>
-                <li><a href="login.html">Login</a></li>
+                <li id="login-item"><a href="login.html">Login</a></li>
                 <li><a>|</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a id="register-item" href="register.html">Register</a></li>
             </ul>
         </div>
+
     </nav>
 
-    <form class="login-form" action="login.php" method="POST">
-        <h1>Login</h1>
-        <label for="uname">Username</label>
-        <input type="text" id="uname" name="uname" placeholder="Username" class="input-field" required>
+     <main>
+        <section class="heading">
+            <h1>Select Your Preffered Package</h1>
+        </section>
+        
+        <section class="products">
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Password" class="input-field" required>
-
-        <button type="submit" class="button">Login</button>
-        <a href="register.html">Don't have an account?</a>
-    </form>
+        </section>
+    </main>
 
     <footer>
         <img src="media/coffee_logo.png" alt="logo" id="footer-logo">
         <p>&copy; KoffeeMart 2023</p>
     </footer>
-
+    <script src="script.js"></script>
+    
 </body>
 </html>

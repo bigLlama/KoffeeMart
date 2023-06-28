@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.login-form,
+.register-form,
+.product-form,
+.remove-form {
+    margin: auto;
+    position: relative;
+    margin-top: 220px;
+    width: 370px;
+    height: fit-content;
+    padding: 20px;
+    background-color: #202a40;
+    box-shadow: 0 0 20px 10px #5d97a1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    border: solid 3px #a0e1ec;
+    border-radius: 10px;
+  }
+  
+.register-form {
+  margin-top: 160px;
+}
+
+  .login-form h1,
+  .register-form h1,
+  .product-form h1,
+  .remove-form h1 {
+    color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label,
+  .register-form label,
+  .product-form label,
+  .remove-form label {
+    color: #a0e1ec;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-form .input-field,
+  .register-form .input-field,
+  .product-form .input-field,
+  .remove-form .input-field {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-form .button,
+  .register-form .button,
+  .product-form .button,
+  .remove-form .button {
+    font-weight: bold;
+    width: 50%;
+    font-size: 18px;
+    background-color: #5d97a1;
+    color: #f9f9f9;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s all;
+    align-self: center;
+  }
+
+  .login-form .button:hover,
+  .register-form .button:hover,
+  .product-form .button:hover,
+  .remove-form .button:hover {
+    color: #5d97a1;
+    background-color: #f9f9f9;
+  }
+
+.login-form a,
+.register-form a {
+  color: #a0e1ec;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.product-form {
+  margin-bottom: 200px;
+}
+
+.product-form textarea {
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-form input[type="file"] {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  color: #5d97a1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.product-form,
+.remove-form {
+    width: 370px;
+    height: fit-content;
+    padding: 20px;
+    background-color: #202a40;
+    box-shadow: 0 0 20px 10px #5d97a1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-form select {
+    width: 370px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #202a40;
+    font-weight: bold;
+}
+
+.product-form {
+  margin-right: 20px;
+}
+
+footer {
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .login-form,
+    .register-form,
+    .product-form,
+    .remove-form {
+      width: 300px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .product-form,
+    .remove-form {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .login-form .input-field,
+    .register-form .input-field,
+    .product-form .input-field,
+    .product-form .input-field[type="file"] {
+      width: 280px;
+    }
+
+    .remove-form .dropdown {
+      width: 300px;
+    }
+
+    .form-container {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+}

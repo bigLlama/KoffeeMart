@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KoffeeMart</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="icon" href="media/icon.png">
+    <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>KoffeeMart</h1>
+    
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="container">
-      <form action="login.html">
-        <h2>Register</h2>
-        <label for="name">Username:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-        <div class="buttons-container">
-          <button type="submit">Register</button>
+        <div class="nav-heading">
+            <img src="media/coffee_logo.png" alt="logo" id="nav-logo">
+            <h1>KoffeeMart</h1>
         </div>
-      </form>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; KoffeeMart 2023</p>
-  </footer>
+        
+        <div class="login-links">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a>|</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form class="register-form" action="register.php" method="POST">
+        <h1>Register</h1>
+        <label for="uname">Username</label>
+        <input type="text" id="uname" name="uname" placeholder="Username" class="input-field" required>
+    
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" class="input-field" required>
+    
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" class="input-field" required>
+    
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" class="input-field" required>
+        
+        <button type="submit" class="button">Register</button>
+        <a href="login.html">Already have an account?</a>
+    </form>
+    
+
+    <footer>
+        <img src="media/coffee_logo.png" alt="logo" id="footer-logo">
+        <p>&copy; KoffeeMart 2023</p>
+    </footer>
+
 </body>
 </html>
